@@ -1,0 +1,90 @@
+/*  Para incluir el padding y el borde en el tamaño total del contenedor */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/*  Variables */
+:root {
+    --azul: #409BD6;
+    --negro: #14171A;
+    --gris:#667787;
+    --grisClaro: #AAB8C2;
+    --grisMuyClaro: #E2E9EE;
+    --blanco:  #F6F9FB;
+    --font: 'Roboto Mono', monospace;
+}
+
+body {
+    margin: 0 auto;
+    font-family: var(--font);
+    background-color: var(--negro);
+}
+
+p, .tech {
+    color: var(--blanco);
+    font-size: 0.8rem;
+}
+
+h3 {
+    color: var(--gris);
+    font-size: 0.8rem;
+}
+
+.habilidades {
+    display: flex;
+    text-align: center;
+}
+
+.iconos {
+    margin: 0 auto;
+}
+
+.text {
+    font-size: 0.6rem;
+}
+.imagen {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.logo {
+    width: inherit;
+    margin: auto;
+}
+
+h1, h2 {
+    color: var(--azul);
+}
+
+h1 {
+    margin-top: 0;
+}
+h2 {
+    margin-top: 2rem;
+}
+
+.contenedor {
+    display: flex;
+    padding: 3rem;
+    gap: 3rem;
+}
+.datos {
+    width: 75%;
+}
+.foto {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+img {
+    width: 18rem;
+    margin-bottom: 7rem;
+}
